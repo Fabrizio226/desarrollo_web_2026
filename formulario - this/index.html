@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Guía Completa JavaScript - this</title>
+<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+<h1>Guía JavaScript - Uso de this</h1>
+
+<!-- ===================== -->
+<!-- EJERCICIO 1 -->
+<!-- ===================== -->
+<section>
+    <h2>Ejercicio 1: Uso básico de this</h2>
+
+    <input type="text" placeholder="Escribe tu nombre"
+            onfocus="resaltar(this)"
+            onblur="normal(this)">
+</section>
+
+<!-- ===================== -->
+<!-- EJERCICIO 2 -->
+<!-- ===================== -->
+<section>
+    <h2>Ejercicio 2: Validación de formulario</h2>
+
+    <form onsubmit="return validarFormulario(this)">
+        <label>Correo electrónico:</label><br>
+        <input type="email" name="correo"><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="mensaje1"></p>
+</section>
+
+<!-- ===================== -->
+<!-- EJERCICIO 3 -->
+<!-- ===================== -->
+<section>
+    <h2>Ejercicio 3: Interacción avanzada</h2>
+
+    <form onsubmit="return validar(this)">
+        
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre"
+            onclick="resaltarBorde(this)"><br><br>
+
+        <label>Edad:</label><br>
+        <input type="number" name="edad"
+            onclick="resaltarBorde(this)"><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="mensaje2"></p>
+</section>
+
+<script src="static/js/script.js"></script>
+</body>
+</html>
